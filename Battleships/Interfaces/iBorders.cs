@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Battleships.Border
+namespace Battleships.Interfaces
 {
     interface IBorders
     {

@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Battleships.Interfaces;
 
-namespace Battleships.Move
+namespace Battleships.Objects
 {
     public class Move : IMove
     {

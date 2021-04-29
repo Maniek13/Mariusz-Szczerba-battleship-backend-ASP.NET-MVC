@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using Battleships.Border;
-using Battleships.Move;
+using Battleships.Objects;
 
 namespace Battleship.Core
 {

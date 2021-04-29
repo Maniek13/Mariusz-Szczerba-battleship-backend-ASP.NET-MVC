@@ -1,4 +1,4 @@
-﻿namespace Battleships.Move
+﻿namespace Battleships.Interfaces
 {
     interface IMove
     {
