@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using Battleships.Border;
+using Battleships.Move;
 
 namespace Battleship.Core
 {
@@ -7,22 +9,6 @@ namespace Battleship.Core
     {
         private static List<Borders> borders = new List<Borders>();
         private static int id = 0;
-
-        public class Borders
-        {
-            public int GameId { get; set; }
-            public IList<int> StripP1 { get; set; }
-            public IList<int> StripP2 { get; set; }
-            public bool Next { get; set; }
-            public DateTime Time { get; set; }
-        }
-
-        public class Move
-        {
-            public int Message { get; set; }
-            public int Hit { get; set; }
-            public int Field { get; set; }
-        }
 
         public Borders UsersShips()
         {
