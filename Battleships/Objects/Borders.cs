@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Battleships.Border
 {
-    public class Borders : iBorders
+    public class Borders : IBorders
     {
         public int GameId { get; set; }
         public IList<int> StripP1 { get; set; }

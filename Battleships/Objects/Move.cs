@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Battleships.Move
 {
-    public class Move : iMove
+    public class Move : IMove
     {
         public int Message { get; set; }
         public int Hit { get; set; }

@@ -1,6 +1,6 @@
 ﻿namespace Battleships.Move
 {
-    interface iMove
+    interface IMove
     {
         int Message { get; set; }
         int Hit { get; set; }
