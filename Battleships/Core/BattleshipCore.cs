@@ -6,16 +6,16 @@ namespace Battleship.Core
 {
     public class BattleshipCore
     {
-        private static List<Borders> borders = new List<Borders>();
+        private static List<Border> borders = new List<Border>();
         private static int id = 0;
 
-        public Borders UsersShips()
+        public Border UsersShips()
         {
-            List<Borders> toDelete = new List<Borders>();
+            List<Border> toDelete = new List<Border>();
 
             if (borders.Count > 0)
             {
-                borders.ForEach((Borders border) => 
+                borders.ForEach((Border border) => 
                 {
                     if (border.Time.AddMinutes(30) < DateTime.Now)
                     {
@@ -25,7 +25,7 @@ namespace Battleship.Core
 
                 if (toDelete.Count > 0)
                 {
-                    toDelete.ForEach((Borders border) =>
+                    toDelete.ForEach((Border border) =>
                     {
                         borders.Remove(border);
 
@@ -50,7 +50,7 @@ namespace Battleship.Core
                 P2.Add(board2[i]);
             }
 
-            var newBorder = new Borders
+            var newBorder = new Border
             {
                 GameId = ++id,
                 StripP1 = P1,

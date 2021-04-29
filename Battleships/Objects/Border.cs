@@ -4,7 +4,7 @@ using Battleships.Interfaces;
 
 namespace Battleships.Objects
 {
-    public class Borders : IBorders
+    public class Border : IBorder
     {
         public int GameId { get; set; }
         public IList<int> StripP1 { get; set; }

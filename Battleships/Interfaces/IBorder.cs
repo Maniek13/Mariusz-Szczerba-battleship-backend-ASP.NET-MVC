@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Battleships.Interfaces
 {
-    interface IBorders
+    interface IBorder
     {
         int GameId { get; set; }
         IList<int> StripP1 { get; set; }
