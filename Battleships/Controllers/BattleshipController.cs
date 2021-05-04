@@ -17,8 +17,6 @@ namespace Battleships.Controllers
         public JsonResult Ships()
         {
             var data = core.UsersShips();
-
-            Request.HttpContext.Response.Headers.Add("Access-Control-Allow-Origin", "*");
             return Json(data);
         }
 
@@ -27,8 +25,6 @@ namespace Battleships.Controllers
         public JsonResult Moves(int gameId, int player, bool next)
         {
             var move = core.ComputerMove(gameId, player, next);
-
-            Request.HttpContext.Response.Headers.Add("Access-Control-Allow-Origin", "*");
             return Json(move);
         }
     }
