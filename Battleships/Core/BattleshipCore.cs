@@ -105,7 +105,7 @@ namespace Battleship.Core
                                 ok = true;
                             }
                         }
-                        else
+                        else if (player == 2)
                         {
 
                             if (temp.StripP1[nr] != 2)
@@ -126,6 +126,11 @@ namespace Battleship.Core
                                 field = nr;
                                 ok = true;
                             }
+                        }
+                        else
+                        {
+                            ok = true;
+                            message = -1;
                         }
                     }
                     temp.Next = false;
